@@ -1,8 +1,21 @@
 import './Product.css';
 import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
 initMercadoPago('YOUR_PUBLIC_KEY');
+import { useState } from 'react';
 
 const Product = () => {
+  const [value, setValue] = useState(1);
+
+  const handleIncrement = () => {
+    setValue(prevValue => prevValue + 1);
+  };
+  const handleDecrement = () => {
+    setValue(prevValue => (prevValue > 1 ? prevValue - 1 : prevValue));
+  };
+
+  const handleChange = event => {
+    setValue(parseInt(event.target.value));
+  };
   return (
     <>
       <div className='box card-tips'>
@@ -12,13 +25,16 @@ const Product = () => {
         <div className="input-container-tips">
           ☕ x
           <div className="quantity">
-            <button className="btn">-</button>
-            <input type="number" name="couter" value="1" />
-            <button className="btn">+</button>
+            <button className="btn" onClick={handleDecrement}>-</button>
+            <input type="number"
+              value={value}
+              onChange={handleChange} placeholder='1' readOnly
+              />
+            <button className="btn" onClick={handleIncrement}>+</button>
           </div>
         </div>
         <div className='form'>
-          <input type="text" placeholder='Nombre (opcional)'/>
+          <input type="text" placeholder='Nombre (opcional)' />
           <input type="text" placeholder="Contacto (opcional, campo oculto al público)" />
           <textarea cols="50" placeholder='Mensaje (opcional)'>
 
