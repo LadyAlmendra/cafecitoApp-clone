@@ -1,0 +1,24 @@
+.list-items {
+    list-style: none;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+
+    & .item-link {
+        padding: 0.5rem;
+    }
+    & .item-link:hover {
+        cursor: pointer;
+    }
+    & .link-active {
+        font-weight: 500;
+        color: purple;
+        border-bottom: 2px solid purple;
+    }
+}
+
+
+
