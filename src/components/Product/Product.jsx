@@ -26,7 +26,7 @@ const Product = () => {
           ☕ x
           <div className="quantity">
             <button className="btn" onClick={handleDecrement}>-</button>
-            <input type="number"
+            <input type="text"
               value={value}
               onChange={handleChange} placeholder='1' readOnly
               />
