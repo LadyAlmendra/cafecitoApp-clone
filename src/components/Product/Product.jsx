@@ -1,10 +1,29 @@
 import './Product.css';
 import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
-initMercadoPago('YOUR_PUBLIC_KEY');
 import { useState } from 'react';
+import axios from 'axios';
 
 const Product = () => {
+  initMercadoPago('YOUR_PUBLIC_KEY', {
+    locale: 'es-AR'
+  });
   const [value, setValue] = useState(1);
+  const [preferenceId, setPreferenceId] = useState(null)
+
+  const createPreference = async () => {
+    try {
+      const response = await axios.post('', {
+        title: "Cafecito Toxic",
+        quantity: value,
+        price: 5 * value
+      });
+      const { id } = response.data;
+      return id;
+
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   const handleIncrement = () => {
     setValue(prevValue => prevValue + 1);
@@ -16,11 +35,19 @@ const Product = () => {
   const handleChange = event => {
     setValue(parseInt(event.target.value));
   };
+
+  const handleBuy = async () => {
+    const id = await createPreference();
+    if (id) {
+      setPreferenceId(id)
+    }
+  }
+
   return (
     <>
       <div className='box card-tips'>
         <h4>
-          ¡Ayúdame con un café!
+          ¡Ayúdame con un café Toxic!
         </h4>
         <div className="input-container-tips">
           ☕ x
@@ -29,7 +56,7 @@ const Product = () => {
             <input type="text"
               value={value}
               onChange={handleChange} placeholder='1' readOnly
-              />
+            />
             <button className="btn" onClick={handleIncrement}>+</button>
           </div>
         </div>
@@ -40,12 +67,13 @@ const Product = () => {
 
           </textarea>
           <hr />
-          <p>Invitame 1 Cafecito (ARS $5,00)</p>
-          <button className='buy-mercadopago'>MercadoPago</button>
+          <p>Invitame {value} Cafecito (ARS ${5 * value},00)</p>
+          <button className='buy-mercadopago' onClick={handleBuy}>MercadoPago</button>
+          {preferenceId &&
+            <Wallet initialization={{ preferenceId: preferenceId }} customization={{ texts: { valueProp: 'smart_option' } }} />
+          }
         </div>
-
       </div>
-      <div id="wallet_container"></div>
     </>
   )
 }
