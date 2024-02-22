@@ -12,7 +12,9 @@ const NavLink = () => {
             <li className='item-link'>
                 Post
             </li>
-
+            <li className='item-link'>
+                Planes
+            </li>
         </ul>
     )
 }

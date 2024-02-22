@@ -1,6 +1,6 @@
 .list-items {
     list-style: none;
-    margin: auto;
+    margin: 1rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
     font-weight: 400;
 
     & .item-link {
-        padding: 0.5rem;
+        padding: 0.2rem;
     }
     & .item-link:hover {
         cursor: pointer;
@@ -16,7 +16,7 @@
     & .link-active {
         font-weight: 500;
         color: purple;
-        border-bottom: 2px solid purple;
+        border-bottom: 4px solid purple;
     }
 }
 

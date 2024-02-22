@@ -1,5 +1,4 @@
 .profile {
-    position: relative;
     width: 100%;
     text-align: center;
     margin: auto;
@@ -9,79 +8,89 @@
 
 .profile-img {
     width: 100%;
-}
+    position: relative;
 
-.container-banner {
-    display: block;
-    width: 100%;
-    height: 250px;
-    border-radius: 0 0 1rem 1rem;
-
-    & img {
+    & .container-banner {
+        display: block;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-        mix-blend-mode: darken;
-        filter: grayscale(100%);
+        height: 200px;
         border-radius: 0 0 1rem 1rem;
-    }
-}
+        background: linear-gradient(to right, #0097fc, #ff65bf, #f3f2f2, #ff65bf, #0097fc);
 
-.container-img-profile {
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    margin-top: -8rem;
-    border-radius: 50%;
-    background-color: black;
-
-    & img {
-        border-radius: 50%;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-        mix-blend-mode: difference;
-        border: 0.4rem solid white;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            mix-blend-mode: darken;
+            filter: grayscale(100%);
+            border-radius: 0 0 1rem 1rem;
+        }
     }
+
+        & .container-img-profile {
+            position: absolute;
+            bottom: -6.5rem;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 3;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(to top, #0097fc, #ff65bf, #f3f2f2, #ff65bf, #0097fc);
+    
+            & img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+                padding: 0.5rem;
+            }
+        }
 }
 
 .profile-info {
-    margin: auto;
+    margin: 7rem auto auto;
     max-width: fit-content;
     text-wrap: balance;
     line-height: 1.3;
-
+    
     & h1 {
         font-size: 3.8rem;
         font-weight: 600;
     }
-
-    & h3 {
-        font-size: 0.80rem;
+    
+    h2, h5 {
+        text-align: center;
+        max-width: 100%;
         font-weight: 400;
         color: rgb(0, 0, 0, 0.65);
-
-        & .text-pink {
-            color: rgb(255, 0, 111);
-        }
-        & .text-pink::after {
-            content: '🩷';
-        }
-        & .text-harley {
-            color: rgb(241, 5, 5);
-        }
-        & .text-harley::after {
-            content: '🖤';
-        }
     }
 
-    & h5 {
-        margin: 1rem 0;
-        font-size: 1.2rem;
-        font-weight: 400;
-        color: rgb(0, 0, 0, 0.65);
+    h2 {
+        font-size: calc(0.80rem + 0.4vw); 
+        
+                & .text-pink {
+                    color: rgb(255, 0, 111);
+                }
+        
+                & .text-pink::after {
+                    content: '🩷';
+                }
+        
+                & .text-harley {
+                    color: rgb(241, 5, 5);
+                }
+        
+                & .text-harley::after {
+                    content: '🖤';
+                }
+    }
+
+    h5 {
+        font-size: calc(1.2rem + 0.4vw);
     }
 
 }

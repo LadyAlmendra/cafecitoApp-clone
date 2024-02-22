@@ -15,8 +15,8 @@ const Profile = () => {
                 </div>
                 <div className='profile-info'>
                     <h1 className='name'>Lady Toxic</h1>
-                    <h3 className='status'>No soy una <strong className='text-pink'>Barbie</strong>,
-                        soy una <strong className='text-harley'>Harley Quinn</strong></h3>
+                    <h2 className='status'>No soy una <strong className='text-pink'>Barbie</strong>,
+                        soy una <strong className='text-harley'>Harley Quinn</strong></h2>
                     <h5>Ilustradora y Modelo Alternativa</h5>
                 </div>
                 <NavLink />
