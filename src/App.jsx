@@ -8,7 +8,7 @@ const App = () => {
   const [serverStatus, setServerStatus] = useState('');
 
   const checkServerStatus = async () => {
-    console.log("Haciendo petición al servidor:", server);
+    console.log("Haciendo petición al servidor");
     try {
       const response = await axios.get(server);
       console.log("Respuesta recibida del servidor:", response); 
