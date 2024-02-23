@@ -15,7 +15,7 @@
         width: 100%;
         height: 200px;
         border-radius: 0 0 1rem 1rem;
-        background: linear-gradient(to right, #0097fc, #ff65bf, #f3f2f2, #ff65bf, #0097fc);
+        background: linear-gradient(90deg, #d62900, #ff9b55, #d461a6, #a50062);
 
         & img {
             width: 100%;
@@ -28,27 +28,27 @@
         }
     }
 
-        & .container-img-profile {
-            position: absolute;
-            bottom: -6.5rem;
-            left: 50%;
-            transform: translate(-50%);
-            z-index: 3;
-            display: inline-block;
-            width: 200px;
-            height: 200px;
+    & .container-img-profile {
+        position: absolute;
+        bottom: -6.5rem;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 3;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(to top, #0097fc, #ff65bf, #f3f2f2, #ff65bf, #0097fc);
+
+        & img {
             border-radius: 50%;
-            background: linear-gradient(to top, #0097fc, #ff65bf, #f3f2f2, #ff65bf, #0097fc);
-    
-            & img {
-                border-radius: 50%;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: top;
-                padding: 0.5rem;
-            }
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            padding: 0.5rem;
         }
+    }
 }
 
 .profile-info {
@@ -56,13 +56,20 @@
     max-width: fit-content;
     text-wrap: balance;
     line-height: 1.3;
-    
+
     & h1 {
         font-size: 3.8rem;
         font-weight: 600;
+
+        /* color: transparent;
+        background-image: linear-gradient(90deg, #000, #785017, #e30404, #ff8b03, #feed06, #028127, #024dff, #750887);
+        -webkit-background-clip: text;
+        background-clip: text; */
+
     }
-    
-    h2, h5 {
+
+    h2,
+    h5 {
         text-align: center;
         max-width: 100%;
         font-weight: 400;
@@ -70,23 +77,23 @@
     }
 
     h2 {
-        font-size: calc(0.80rem + 0.4vw); 
-        
-                & .text-pink {
-                    color: rgb(255, 0, 111);
-                }
-        
-                & .text-pink::after {
-                    content: '🩷';
-                }
-        
-                & .text-harley {
-                    color: rgb(241, 5, 5);
-                }
-        
-                & .text-harley::after {
-                    content: '🖤';
-                }
+        font-size: calc(0.80rem + 0.4vw);
+
+        & .text-pink {
+            color: rgb(255, 0, 111);
+        }
+
+        & .text-pink::after {
+            content: '🩷';
+        }
+
+        & .text-harley {
+            color: rgb(241, 5, 5);
+        }
+
+        & .text-harley::after {
+            content: '🖤';
+        }
     }
 
     h5 {
