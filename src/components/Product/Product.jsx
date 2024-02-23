@@ -18,6 +18,7 @@ const Product = () => {
   const [valueCafe, setValueCafe] = useState(5)
 
   const URL = `${UrlMercadopago}/payment-mercadopago/create-order/`;
+  const URL_REDIRECT = import.meta.env.VITE_URL_REDIRECT
 
   const items = [
     {
@@ -26,15 +27,15 @@ const Product = () => {
       unit_price: valueCafe
     }
   ]
-console.log(items)
+
   const createPreference = async () => {
     try {
       const data = {
         items,
         back_urls: {
-          success: `${import.meta.env.VITE_URL_REDIRECT}/success`,
-          failure: `${import.meta.env.VITE_URL_REDIRECT}/failure`,
-          pending: `${import.meta.env.VITE_URL_REDIRECT}/pending`,
+          success: `${URL_REDIRECT}/success`,
+          failure: `${URL_REDIRECT}/failure`,
+          pending: `${URL_REDIRECT}/pending`,
         }
       };
 
