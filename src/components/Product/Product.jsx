@@ -33,9 +33,9 @@ const Product = () => {
       const data = {
         items,
         back_urls: {
-          success: `${URL_REDIRECT}/success`,
-          failure: `${URL_REDIRECT}/failure`,
-          pending: `${URL_REDIRECT}/pending`,
+          success: `${URL_REDIRECT}`,
+          failure: `${URL_REDIRECT}`,
+          pending: `${URL_REDIRECT}`,
         }
       };
 
