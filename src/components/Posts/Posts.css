@@ -1,0 +1,19 @@
+.post {
+    & h3 {
+        text-wrap: balance;
+        margin-bottom:1rem ;
+    }
+
+    & p {
+        text-wrap: pretty;
+        margin-bottom:1rem ;
+
+    }
+
+    & .btn {
+        display: flex;
+        gap: 0.5rem 1rem;
+        padding: 0.5rem 0;
+        color: purple;
+    }
+}

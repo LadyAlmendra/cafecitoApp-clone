@@ -1,11 +1,11 @@
-import React from 'react'
+import Posts from '../components/Posts/Posts';
 
 const PostsPage = () => {
   return (
     <main>
-      <h3>Page Posts</h3>
+      <Posts />
     </main>
   )
 }
 
-export default PostsPage
+export default PostsPage;
