@@ -1,7 +1,17 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
+import { useEffect } from 'react';
+
+const setPageTitle = (title) => {
+  document.title = title;
+};
 
 const ErrorPage = () => {
+
+  useEffect(() => {
+    setPageTitle('Pagina no encontrada');
+  }, []);
+
   return (
     <>
       <div className='errorPage'>
