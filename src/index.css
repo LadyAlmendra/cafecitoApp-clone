@@ -29,6 +29,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    min-height: 50dvh;
 }
 
 section {

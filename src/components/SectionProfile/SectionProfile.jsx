@@ -1,4 +1,4 @@
-import { InstagramFill, LinkChain, GithubFill } from 'akar-icons'
+import { InstagramFill, LinkChain } from 'akar-icons'
 import './SectionProfile.css'
 
 const SectionProfile = () => {
@@ -17,8 +17,8 @@ const SectionProfile = () => {
             </a>
           </li>
           <li>
-            <a href="https://github.com/Ladytoxic" target='_blank'>
-              <GithubFill strokeWidth={3} size={22} />
+            <a href="https://ladytoxic.com.ar" target='_blank'>
+              <LinkChain strokeWidth={2} size={22} />
             </a>
           </li>
         </ul>

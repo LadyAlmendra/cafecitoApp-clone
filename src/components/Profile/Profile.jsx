@@ -19,7 +19,6 @@ const Profile = () => {
                         soy una <strong className='text-harley'>Harley Quinn</strong></h2>
                     <h5>Ilustradora y Modelo Alternativa</h5>
                 </div>
-                <NavLink />
             </header>
         </>
     )
