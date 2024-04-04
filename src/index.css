@@ -50,12 +50,19 @@ section {
     }
 }
 
-.errorPage {
+.errorPage, .log {
     text-align: center;
     width: 100%;
-    height: 100dvh;
+}
+a, .link {
+    text-decoration: none;
+    color: purple;
 }
 
+.important {
+    text-align: center;
+    text-wrap: balance;
+}
 
 .fade-in {
 	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

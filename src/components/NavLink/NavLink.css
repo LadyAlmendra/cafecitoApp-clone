@@ -6,13 +6,7 @@
     align-items: center;
     gap: 1rem;
     font-weight: 400;
-    position: sticky;
-    top: 0;
-    left: 1rem;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 0.5rem 1rem;
-    backdrop-filter: blur(5px);
+
 
     & .item-link {
         padding: 0.2rem;

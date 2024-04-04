@@ -79,10 +79,10 @@
         font-weight: 500;
         border: none;
         background-color: purple;
+        color: white;
         padding: 1rem 0.5rem;
         border-radius: 0.4rem;
         margin-top: 0.5rem;
-        color: white;
         cursor: pointer;
     }
 }

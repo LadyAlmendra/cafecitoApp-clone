@@ -1,11 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import MainLayout from '../layouts/MainLayout';
+
 import HomePage from "../pages/HomePage";
 import ErrorPage from "../pages/ErrorPage";
 import GalleryPage from "../pages/GalleryPage";
 import PostsPage from "../pages/PostsPage";
 import PlansPage from "../pages/PlansPage";
+import LoginPage from "../pages/LoginPage";
 
 const Router = createBrowserRouter([
     {
@@ -32,9 +34,14 @@ const Router = createBrowserRouter([
         ]
     },
     {
+        path: '/login',
+        element: <LoginPage />
+    },
+    {
         path: '/*',
         element: <ErrorPage />
-    }
+    },
+
 ]);
 
 

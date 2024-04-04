@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    left: 1rem;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem 1rem;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 0.5rem #808080c8;
+
+    & .link {
+        color: purple;
+        justify-content: center;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    & .btn-link {
+        border: none;
+        background-color: purple;
+        color: white;
+        padding: 0.3rem 0.6rem;
+        border-radius: 0.5rem;
+    }
+
+    & img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 0.2rem purple);
+    }
+
+    & ul {
+        list-style: none;
+
+        & li {
+
+            display: inline-block;
+            margin: 0.5rem;
+        }
+    }
+}
