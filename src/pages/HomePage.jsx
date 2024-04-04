@@ -10,7 +10,7 @@ const setPageTitle = (title) => {
 const HomePage = () => {
 
     useEffect(() => {
-        setPageTitle('LadyToxic');
+        setPageTitle('LadyToxic - Inicio');
     }, []);
     return (
         <>

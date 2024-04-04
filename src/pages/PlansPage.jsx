@@ -13,7 +13,6 @@ useEffect(() => {
   return (
     <main>
       <h3>Page Plans</h3>
-      
     </main>
   )
 }
