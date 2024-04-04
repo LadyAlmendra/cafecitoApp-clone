@@ -15,7 +15,7 @@ const PlansPage = () => {
       <section>
         <div className='box plans'>
           <h3>¿Qué vas a hacer está noche?</h3>
-          <p>¡Lo mismo que todas las noches Piky! Tratar de Dominar el mundo.</p>
+          <p>¡Lo mismo que todas las noches Pinky! Tratar de Dominar el mundo.</p>
         </div>
         <div className='box plans'>
           <h3>Ser una gata Pelirroja</h3>
