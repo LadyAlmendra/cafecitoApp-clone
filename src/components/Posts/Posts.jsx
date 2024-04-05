@@ -26,11 +26,9 @@ const Posts = () => {
                     <p>{post.post}</p>
                     <div className='btn'>
                         <button>
-                            {post.like}
                             <ThumbsUp className='icon' strokeWidth={2} size={20} />
                         </button>
                         <button>
-                            {post.disLike}
                             <ThumbsDown className='icon' strokeWidth={2} size={20} />
                         </button>
                     </div>

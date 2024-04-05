@@ -1,4 +1,4 @@
-import SectionGallery from '../components/Gallery/SectionGallery/SectionGallery';
+import SectionGallery from '../../components/Gallery/SectionGallery/SectionGallery';
 import { useEffect } from 'react';
 
 const setPageTitle = (title) => {

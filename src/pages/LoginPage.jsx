@@ -1,13 +1,26 @@
+import { useEffect } from "react";
+
 import Footer from "../components/Footer/Footer";
 import SignIn from "../components/Login/SignIn";
 import Navbar from "../components/Navbar/Navbar";
 
+const setPageTitle = (title) => {
+    document.title = title;
+  };
+
 const LoginPage = () => {
+
+    useEffect(() => {
+        setPageTitle('Café Toxic - Login');
+      }, []);
+    
     return (
         <>
             <Navbar />
             <main>
-                <SignIn />
+                <section>
+                    <SignIn />
+                </section>
             </main>
             <Footer />
         </>

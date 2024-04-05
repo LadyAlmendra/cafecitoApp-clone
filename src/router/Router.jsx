@@ -2,11 +2,11 @@ import { createBrowserRouter } from "react-router-dom";
 
 import MainLayout from '../layouts/MainLayout';
 
-import HomePage from "../pages/HomePage";
+import HomePage from "../pages/User/HomePage";
+import GalleryPage from "../pages/User/GalleryPage";
+import PostsPage from "../pages/User/PostsPage";
+import PlansPage from "../pages/User/PlansPage";
 import ErrorPage from "../pages/ErrorPage";
-import GalleryPage from "../pages/GalleryPage";
-import PostsPage from "../pages/PostsPage";
-import PlansPage from "../pages/PlansPage";
 import LoginPage from "../pages/LoginPage";
 
 const Router = createBrowserRouter([
@@ -14,22 +14,21 @@ const Router = createBrowserRouter([
         path: '/',
         element: <MainLayout />,
         children: [
-         
             {
                 path: '/',
-                element: <HomePage /> 
-            },         
+                element: <HomePage />
+            },
             {
                 path: '/gallery',
-                element: <GalleryPage /> 
+                element: <GalleryPage />
             },
             {
                 path: '/posts',
-                element: <PostsPage /> 
+                element: <PostsPage />
             },
             {
                 path: '/plans',
-                element: <PlansPage /> 
+                element: <PlansPage />
             },
         ]
     },

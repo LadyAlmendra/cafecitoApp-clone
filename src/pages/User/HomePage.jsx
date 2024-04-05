@@ -1,5 +1,5 @@
-import SectionProfile from "../components/SectionProfile/SectionProfile";
-import SectionCash from "../components/SectionCash/SectionCash";
+import SectionProfile from "../../components/SectionProfile/SectionProfile";
+import SectionCash from "../../components/SectionCash/SectionCash";
 
 import { useEffect } from "react";
 
