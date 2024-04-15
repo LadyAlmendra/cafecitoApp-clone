@@ -4,12 +4,12 @@ import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_APIKEY_FIREBASE,
-  authDomain: "cafetoxic0.firebaseapp.com",
-  databaseURL: "https://cafetoxic0-default-rtdb.firebaseio.com",
-  projectId: "cafetoxic0",
-  storageBucket: "cafetoxic0.appspot.com",
-  messagingSenderId: "352369281028",
-  appId: "1:352369281028:web:97397199e2495e66244d51"
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_DB_URL,
+  projectId: import.meta.env.VITE_PROYECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
