@@ -130,6 +130,7 @@ const Product = () => {
             </div>
           )}
         </div>
+        <p className='warning'>Esto no es un simulacro, es un pago real usando Mercadopago</p>
       </div>
     </>
   )
