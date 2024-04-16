@@ -1,6 +1,7 @@
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { Bell } from "akar-icons";
+import UserNavbar from './UserNavbar';
 
 const Navbar = ({ user }) => {
 
@@ -19,10 +20,7 @@ const Navbar = ({ user }) => {
                 </li>
                 {user ? (
                     <li className='user-navbar'>
-                        <button className='btn-navbar'>
-                            <Bell strokeWidth={2} size={24} />
-                        </button>
-                        <img className='user-img-navbar' src={user.photoURL} alt="Foto del usuario" />
+                        <UserNavbar photoURL={user.photoURL}></UserNavbar>
                     </li>
                 ) : (
                     <li>

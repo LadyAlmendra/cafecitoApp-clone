@@ -6,14 +6,12 @@ const SignIn = () => {
     <div className='box'>
       <h1>Sign in</h1>
       <div className='form'>
-        <label>Usernamer or primary email</label>
-        <input type="text" placeholder='Email' />
-        <label>Password</label>
-        {/* <input type="password" placeholder='Password' /> */}
+        <input type="text" placeholder='Email' disabled />
+        <input type="text" placeholder='Password' disabled />
         <button className="btn">Sign In</button>
       </div>
       <div className='container-link'>
-        Don't have an account yet? <Link className="link" to="/sign-up">Register now</Link>
+      ¿Aún no tienes una cuenta?  <Link className="link" to="/sign-up">Registrar ahora</Link>
       </div>
     </div>
   )

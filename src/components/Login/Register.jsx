@@ -5,14 +5,14 @@ const Register = () => {
     <div className='box'>
       <h1>Register</h1>
       <div className='form'>
-        <input type="text" placeholder='Email' />
+        <input type="text" placeholder='Email' disabled/>
         <p>We recommend a work email address</p>
         <input type="text" placeholder='Password' disabled />
         <p>Minimum length is 8 characters</p>
         <button className="btn">Register</button>
       </div>
       <div className='container-link'>
-        Already have an account? <Link className="link" to="/login">Sign In</Link>
+      ¿Ya tienes una cuenta? <Link className="link" to="/login">Iniciar Sesión</Link>
       </div>
     </div>
   )

@@ -21,7 +21,7 @@ const MainLayout = () => {
 
     const handleUserStateChanged = (user) => {
         if (user) {
-            console.log(user.photoURL);
+            console.log(user);
             setUser(user)
         } else {
             console.log('No hay user');
