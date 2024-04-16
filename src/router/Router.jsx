@@ -8,6 +8,7 @@ import PostsPage from "../pages/User/PostsPage";
 import PlansPage from "../pages/User/PlansPage";
 import ErrorPage from "../pages/ErrorPage";
 import LoginPage from "../pages/LoginPage";
+import SignUpPage from "../pages/SignUpPage";
 
 const Router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const Router = createBrowserRouter([
     {
         path: '/login',
         element: <LoginPage />
+    },
+    {
+        path: '/sign-up',
+        element: <SignUpPage />
     },
     {
         path: '/*',

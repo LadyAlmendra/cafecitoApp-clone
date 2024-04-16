@@ -5,10 +5,32 @@ import Profile from '../components/Profile/Profile';
 import NavLink from '../components/NavLink/NavLink';
 import Navbar from '../components/Navbar/Navbar';
 
+import { useEffect, useState } from 'react';
+import { auth } from "../firebase/config.js";
+import { onAuthStateChanged } from "firebase/auth";
+
+
+
 const MainLayout = () => {
+
+    const [user, setUser] = useState(null)
+
+    useEffect(() => {
+        onAuthStateChanged(auth, handleUserStateChanged);
+    }, []);
+
+    const handleUserStateChanged = (user) => {
+        if (user) {
+            console.log(user.photoURL);
+            setUser(user)
+        } else {
+            console.log('No hay user');
+        }
+    }
+
     return (
         <>
-            <Navbar />
+            <Navbar user={user} />
             <Profile />
             <NavLink />
             <Toast />

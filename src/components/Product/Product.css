@@ -24,7 +24,7 @@
             }
         }
 
-        & .btn {
+        & .btn-c {
             background: none;
             border: none;
             color: white;
@@ -40,7 +40,7 @@
 .form {
     width: 100%;
 
-    & input[type="text"],
+    & input[type="text"], input[type="password"],
     textarea {
         display: block;
         width: 100%;

@@ -95,12 +95,12 @@ const Product = () => {
         <div className="input-container-tips">
           ☕ x
           <div className="quantity">
-            <button className="btn" onClick={handleDecrement}>-</button>
+            <button className="btn-c" onClick={handleDecrement}>-</button>
             <input type="text"
               value={value}
               onChange={handleChange} placeholder='1' readOnly
             />
-            <button className="btn" onClick={handleIncrement}>+</button>
+            <button className="btn-c" onClick={handleIncrement}>+</button>
           </div>
         </div>
         <div className='form'>

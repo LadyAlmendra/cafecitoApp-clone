@@ -37,12 +37,28 @@ nav {
     }
 
     & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         list-style: none;
 
         & li {
 
             display: inline-block;
             margin: 0.5rem;
+        }
+
+        & .user-img-navbar {
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        & .btn-navbar {
+            background: none;
+            border: none;
+            cursor: pointer;
         }
     }
 }

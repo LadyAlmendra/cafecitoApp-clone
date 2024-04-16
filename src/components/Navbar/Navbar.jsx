@@ -1,7 +1,11 @@
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { Bell } from "akar-icons";
 
-const Navbar = () => {
+const Navbar = ({ user }) => {
+
+
+
     return (
         <nav>
             <Link className='link' to="/">
@@ -13,11 +17,19 @@ const Navbar = () => {
                         Explorar
                     </Link>
                 </li>
-                <li>
-                    <Link className='link btn-link' to="/login">
-                        Ingresar
-                    </Link>
-                </li>
+                {user ? (
+                    <li className='user-navbar'>
+                        <button className='btn-navbar'>
+                            <Bell strokeWidth={2} size={24} />
+                        </button>
+                        <img className='user-img-navbar' src={user.photoURL} alt="Foto del usuario" />
+                    </li>
+                ) : (
+                    <li>
+                        <Link className='link btn-link' to="/login">
+                            Ingresar
+                        </Link>
+                    </li>)}
             </ul>
         </nav>
     )
