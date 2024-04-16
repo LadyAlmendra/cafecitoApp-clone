@@ -24,7 +24,7 @@ const Posts = () => {
                 <div className='box post' key={post.id}>
                     <h3>{post.title}</h3>
                     <p>{post.post}</p>
-                    <div className='btn'>
+                    <div className='btn-icon'>
                         <button>
                             <ThumbsUp className='icon' strokeWidth={2} size={20} />
                         </button>

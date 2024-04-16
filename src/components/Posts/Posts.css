@@ -10,7 +10,7 @@
 
     }
 
-    & .btn {
+    & .btn-icon {
         display: flex;
         gap: 0.5rem 1rem;
         padding: 0.5rem 0;
