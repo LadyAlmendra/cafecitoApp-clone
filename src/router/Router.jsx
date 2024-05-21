@@ -9,6 +9,8 @@ import PlansPage from "../pages/User/PlansPage";
 import ErrorPage from "../pages/ErrorPage";
 import LoginPage from "../pages/LoginPage";
 import SignUpPage from "../pages/SignUpPage";
+import DashboardPage from "../pages/User/DashboardPage";
+import ChooseUserNamePage from "../pages/User/ChooseUserNamePage";
 
 const Router = createBrowserRouter([
     {
@@ -32,6 +34,14 @@ const Router = createBrowserRouter([
                 element: <PlansPage />
             },
         ]
+    },
+    {
+        path: '/dashboard',
+        element: <DashboardPage />
+    },
+    {
+        path: '/chooseUserName',
+        element: <ChooseUserNamePage />
     },
     {
         path: '/login',

@@ -1,5 +1,6 @@
-import { Bell } from 'akar-icons';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
+import { Bell } from 'akar-icons';
 import BtnSignOut from '../Login/SignOut';
 
 const UserNavbar = ({ photoURL }) => {
@@ -8,10 +9,12 @@ const UserNavbar = ({ photoURL }) => {
             <button className='navbar-user-btn'>
                 <Bell strokeWidth={2} size={24} />
             </button>
-            <img className='navbar-user-img' src={photoURL} alt="userPhoto" />
+            <Link to="/dashboard">
+                <img className='navbar-user-img' src={photoURL} alt="userPhoto" />
+            </Link>
             <BtnSignOut />
         </div>
     )
-}
+} 
 
 export default UserNavbar;

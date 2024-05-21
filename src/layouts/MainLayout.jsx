@@ -9,8 +9,6 @@ import { useEffect, useState } from 'react';
 import { auth } from "../firebase/config.js";
 import { onAuthStateChanged } from "firebase/auth";
 
-
-
 const MainLayout = () => {
 
     const [user, setUser] = useState(null)

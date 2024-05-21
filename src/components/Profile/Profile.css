@@ -12,8 +12,10 @@
 
     & .container-banner {
         display: block;
+        margin: auto;
         width: 100%;
         height: 200px;
+        max-width: 1000px;
         border-radius: 0 0 1rem 1rem;
         background: linear-gradient(90deg, #d62900, #ff9b55, #d461a6, #a50062);
 
@@ -101,3 +103,5 @@
     }
 
 }
+
+

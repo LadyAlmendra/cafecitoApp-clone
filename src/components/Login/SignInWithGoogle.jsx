@@ -20,6 +20,7 @@ const SignInWithGoogle = () => {
             console.log(error)
         }
     }
+
     return (
         <>
             <div className='box '>

@@ -12,7 +12,6 @@ html {
 
 body {
     font-family: Onest, sans-serif;
-    min-height: 100dvh;
 }
 
 header,
@@ -122,5 +121,32 @@ a,
 
     .profile-description {
         order: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile {
+        padding: 0;
+
+        & .container-banner {
+            height: 120px;
+            border-radius: 0;
+
+        }
+        
+        & .container-img-profile {
+            width: 120px;
+            height: 120px;
+            bottom: -3.5rem;
+            left: 5rem;
+        }
+        & .profile-info {
+            margin: 4rem auto 1rem;
+        }
+    }
+
+    .list-items {
+        margin: 0;
+        justify-content: space-around;
     }
 }
