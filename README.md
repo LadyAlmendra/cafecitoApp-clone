@@ -15,7 +15,7 @@ CSS: Para estilizar la aplicación.
 Vite: Como herramienta de construcción y desarrollo local.
 
 # Repo Server:
-https://github.com/Ladytoxic/app-mercadopago
+https://github.com/LadyAlmendra/app-mercadopago
 Integración de mercadopago usando Express.js
 Servicio desplegado en Render.com
 
